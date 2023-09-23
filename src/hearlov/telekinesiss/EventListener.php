@@ -2,7 +2,6 @@
 
 namespace hearlov\telekinesiss;
 
-use pocketmine\block\BlockTypeIds;
 use pocketmine\math\Vector3;
 use pocketmine\event\block\BlockBreakEvent;
 use pocketmine\event\player\PlayerItemHeldEvent;
@@ -18,7 +17,7 @@ class EventListener implements Listener {
         $this->plugin = $plugin;
     }
 
-    /**
+    /*
      * @param BlockBreakEvent $event
      * @return void
      */
@@ -53,7 +52,11 @@ class EventListener implements Listener {
 
     }
 
-    public function onHeld(PlayerItemHeldEvent $e){
+     /*
+     * @param PlayerItemHeldEventt $e
+     * @return void
+     */
+    public function onHeld(PlayerItemHeldEvent $e): void{
         if ($e->isCancelled()) return;
         $telekinesissLevel = $e->getItem()->getEnchantmentLevel(EnchantmentIdMap::getInstance()->fromId(EnchantmentIds::TELEKINESISS));
         if($telekinesissLevel == 0) return;
