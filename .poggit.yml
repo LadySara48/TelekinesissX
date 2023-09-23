@@ -1,0 +1,8 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/LadySara48/TelekinesissX
+build-by-default: true
+branches:
+- stable
+projects:
+  TelekinesissX:
+    path: ""
+...
