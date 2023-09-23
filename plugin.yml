@@ -1,9 +1,6 @@
 name: TelekinesissX
 main: hearlov\telekinesiss\Telekinesiss
 author: Hearlov
-description: "Telekinesiss"
+description: "Telekinesiss AutoPickUp Enchantment for all Tools"
 version: 1.0
 api: 5.0.0
-permissions:
-  telekinesiss.admin:
-    default: op
