@@ -5,4 +5,5 @@ branches:
 projects:
   TelekinesissX:
     path: ""
+    icon: icon.png
 ...
